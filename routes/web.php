@@ -18,6 +18,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/{id}', function ($id) {
-    echo "Selamat Datang";
+Route::get('/', function ($id) {
+    echo "Selamat Datang $id";
     });
+    Route::get('/about', function () {
+        echo "2041720116-Arva Bayu Susanto";
+        });
+        Route::get('/article/{id}', function ($id) {
+            echo "Halaman Artikel dengan ID $id";
+            });
+   
